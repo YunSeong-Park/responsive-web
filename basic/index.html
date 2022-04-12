@@ -6,6 +6,63 @@
     <title>Complete Responsive Website Design</title>
   </head>
   <body>
-    <h1>Fonts</h1>
+    <div class="wrapper">
+      <header>
+        <a href="#" class="logo"> Brend Name</a>
+        <div class="toggle" onclick="toggleClassName()"></div>
+      </header>
+      <div class="sidebar">
+        <ul>
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#">About</a>
+          </li>
+          <li>
+            <a href="#">Service</a>
+          </li>
+          <li>
+            <a href="#">Clients</a>
+          </li>
+          <li>
+            <a href="#">Testimosials</a>
+          </li>
+          <li>
+            <a href="#">Team</a>
+          </li>
+          <li>
+            <a href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <div class="banner">
+        <img src="./images/bg.jpg" />
+        <div class="content">
+          <h2>Sucess By Design</h2>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Perferendis neque ex a maiores molestias. Architecto, totam officia
+            porro consequuntur rem dignissimos dolores velit hic odit rerum
+            atque nesciunt magni voluptas!
+          </p>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+      function toggleClassName() {
+        var sidebar = document.querySelector(".sidebar");
+        var wrapper = document.querySelector(".wrapper");
+        var toggle = document.querySelector(".toggle");
+        sidebar.classList.toggle("active");
+        wrapper.classList.toggle("active");
+        toggle.classList.toggle("active");
+      }
+
+      window.addEventListener("scroll", function () {
+        var header = document.querySelector("header");
+        header.classList.toggle("sticky", window.scrollY > 0);
+      });
+    </script>
   </body>
 </html>
