@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Poppins";
-  src: url(./fonts//Poppins-Black.ttf) format("truetype");
+  src: url(./fonts/Poppins-Black.ttf) format("truetype");
   font-weight: 900;
 }
 @font-face {
@@ -192,7 +192,7 @@ header .toggle.active {
   font-weight: 300;
   letter-spacing: 1px;
 }
-.imgBx {
+.about .imgBx {
   position: relative;
   width: 50%;
   background-image: url(images/window.jpg);
@@ -222,6 +222,7 @@ header .toggle.active {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  z-index: 100;
 }
 .container .serviceBx img {
   max-width: 100px;
@@ -231,4 +232,28 @@ header .toggle.active {
   font-weight: 500px;
   font-size: 20px;
   letter-spacing: 1px;
+}
+
+.technology {
+  position: inherit;
+  background-color: #3f8ffc;
+  width: 100%;
+  padding: 100px;
+  padding-top: 300px;
+  margin-top: -300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.technology .contentBx {
+  position: relative;
+  max-width: 800px;
+}
+.technology .imgBx {
+  position: relative;
+  max-width: 250px;
+}
+.technology .imgBx img {
+  max-width: 100%;
+  filter: invert(1);
 }
