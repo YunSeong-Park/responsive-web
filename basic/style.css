@@ -51,6 +51,7 @@
 body {
   background: #12222d;
   height: 1000px;
+  overflow-x: hidden;
 }
 
 .wrapper {
@@ -450,6 +451,9 @@ header .toggle.active {
 .footer ul li a img {
   max-width: 20px;
   filter: invert(1);
+}
+.services .container .serviceBx {
+  margin: 20px;
 }
 
 @media (max-width: 991px) {
