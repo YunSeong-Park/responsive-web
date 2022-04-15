@@ -451,3 +451,93 @@ header .toggle.active {
   max-width: 20px;
   filter: invert(1);
 }
+
+@media (max-width: 991px) {
+  header,
+  header.sticky {
+    padding: 20px 50px;
+  }
+  .sidebar ul li a {
+    font-size: 24px;
+  }
+  .banner {
+    padding: 50px;
+  }
+  .banner .content h2 {
+    font-size: 36px;
+  }
+  .banner .content p {
+    font-size: 16px;
+  }
+  .about {
+    flex-direction: column;
+  }
+  .about .contentBx {
+    background-color: #162c3b;
+    width: 100%;
+    padding: 50px;
+  }
+  .about .imgBx {
+    min-height: 400px;
+    width: 100%;
+  }
+  .services {
+    padding: 50px;
+  }
+  .services .container {
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .services .container .serviceBx {
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+  }
+  .technology {
+    padding: 50px;
+    padding-top: 300px;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .technology .imgBx {
+    margin-top: 40px;
+  }
+  .client {
+    padding: 50px;
+  }
+  .client .imgBx {
+    justify-content: center;
+  }
+  .testimonials {
+    padding: 50px;
+  }
+  .testimonials .container {
+    margin: 0;
+  }
+  .testimonials .container .contentBx {
+    padding: 40px 30px;
+  }
+
+  .team {
+    padding: 0px 50px 50px;
+  }
+  .team .container {
+    justify-content: center;
+  }
+
+  .contact {
+    padding: 50px;
+  }
+
+  .footer {
+    flex-direction: column;
+    padding: 20px 50px;
+    justify-content: center;
+  }
+  .footer ul {
+    margin-top: 20px;
+  }
+  .footer p {
+    text-align: center;
+  }
+}
